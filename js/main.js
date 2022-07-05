@@ -3,7 +3,7 @@ const userKm = parseInt( prompt ('Inserisci il numero di chilometri che devi per
 console.log (userKm);
 
 //ETÁ DEL PASSEGGERO//
-const userEtà = parseInt( prompt ('Inserisci l\'età del passeggero'));
+const userEta = parseInt( prompt ('Inserisci l\'età del passeggero'));
 console.log (userEtà)
 
 
@@ -12,11 +12,11 @@ const prezzoIniziale = userKm * 0.21;
 let prezzoTotale;
 
 //SCONTI IN BASE ALL'ETÁ//
-if (userEtà < 18){
+if (userEta < 18){
     prezzoTotale = prezzoIniziale - prezzoIniziale * 0.2;
 }
 
-if (userEtà > 65) {
+if (userEta > 65) {
     prezzoTotale = prezzoIniziale - prezzoIniziale  * 0.4;
 }
 else{
